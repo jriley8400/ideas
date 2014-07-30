@@ -1,0 +1,7 @@
+<h2> <center>Edit Idea</center> </h2>
+<br><br><br>
+<form action=<%="/update_idea/#{@idea.id}" %>>
+  <input type="text" name="title"  value=<%= "#{@idea.title}" %>>
+  <input type="text" name="idea" value=<%= "#{@idea.idea}" %>>
+  <input type="submit">
+</form>

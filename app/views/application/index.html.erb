@@ -1,0 +1,15 @@
+<h1>Ideas</h1>
+<% @ideas.each do |idea| %>
+<ul>
+  <li>
+    <a href=<%= "http://gitbox-131549.use1.nitrousbox.com/idea/#{idea.id}" %>> <%= "#{idea.title} "%></a>
+    <br>
+    <a href=<%= "/idea/#{idea.id}/edit" %> >Edit</a>
+    
+   </li>
+</ul>
+<% end %>
+<p>
+<a href="/new_idea" class="new">New Idea</a>
+</p>
+
