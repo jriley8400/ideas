@@ -5,6 +5,6 @@ Rails.application.routes.draw do
   get '/create_idea' => 'application#create'
   get '/idea/:id/edit' => 'application#edit'
   get '/update_idea/:id' => 'application#update'
-  get '/idea/:id/delete' => 'application#destroy'
+  get '/idea/:id/destroy' => 'application#destroy'
   root :to => "application#index"
 end
